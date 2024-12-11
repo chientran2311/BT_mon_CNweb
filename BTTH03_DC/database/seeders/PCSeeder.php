@@ -4,9 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Faker\Factory as Faker;
-class PcSeeder extends Seeder
+
+class PCSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -40,7 +39,6 @@ class PcSeeder extends Seeder
 
     }
 }
-
 /*
 $faker->boolean(80); // 80% true, 20% false
 $faker->boolean(20); // 20% true, 80% false
