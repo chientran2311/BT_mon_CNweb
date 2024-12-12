@@ -37,3 +37,6 @@ class prac01Seeder extends Seeder
         }
     }
 }
+ /**
+     * Run the database seeds.
+     */

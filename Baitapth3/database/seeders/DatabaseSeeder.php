@@ -8,8 +8,8 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
+     /**
+     * Reverse the migrations.
      */
     public function run(): void
     {
@@ -22,3 +22,6 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+ /**
+     * Reverse the migrations.
+     */
