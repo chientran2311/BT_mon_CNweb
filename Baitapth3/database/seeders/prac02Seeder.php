@@ -16,7 +16,7 @@ class prac02Seeder extends Seeder
         $faker = Faker::create();
         $classIds = [];
         for ($i = 0; $i < 10; $i++) {
-            $classIds[]= DB::table('classes')->insert([
+            $classIds[]= DB::table('classes')->insertGetId([
                 'grade_level' => $faker->randomElement(['Pre-K','Kindergarten','Primary school','Secondary school','High school']),
                 'room_number' => 'VH' . $faker->numberBetween(1, 10),
             ]);

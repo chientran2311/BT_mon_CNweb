@@ -17,7 +17,7 @@ class prac01Seeder extends Seeder
         $medicineIds = [];
 
         for ($i = 0; $i < 10; $i++) {
-            $medicineIds[] = DB::table('medicines')->insert([
+            $medicineIds[] = DB::table('medicines')->insertGetId([
                 'name' => $faker->word(),
                 'brand' => $faker->company(),
                 'dosage' => $faker->randomFloat(1, 0.5, 20),

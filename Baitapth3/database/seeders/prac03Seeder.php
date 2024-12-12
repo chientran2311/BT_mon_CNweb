@@ -17,7 +17,7 @@ class prac03Seeder extends Seeder
         $computerIds = [];
         $memoryOptions = [4, 8, 16, 32, 64,128];
         for ($i = 0; $i < 10; $i++) {
-            $computerIds[] = DB::table('computers')->insert([
+            $computerIds[] = DB::table('computers')->insertGetId([
                 'computer_name' => 'Computer-' . $faker->unique->name,
                 'model' => $faker->randomElement(['Dell OptiPlex', 'HP EliteDesk', 'Lenovo ThinkCentre', 'Mac Mini']),
                 'operating_system' => $faker->randomElement(['Windows 10', 'Windows 11', 'macOS Monterey', 'macOS Ventura', 'Ubuntu']),
