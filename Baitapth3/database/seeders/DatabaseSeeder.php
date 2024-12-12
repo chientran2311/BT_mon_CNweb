@@ -23,5 +23,5 @@ class DatabaseSeeder extends Seeder
     }
 }
  /**
-     * Reverse the migrations.
+     * Reverse the <migrations class=""></migrations>
      */
