@@ -44,7 +44,7 @@ crossorigin="anonymous">
 .btn-update:active {
     background-color: #242424;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 
@@ -65,7 +65,7 @@ crossorigin="anonymous">
             <option value="{{ $computer->id }}" {{ $computer->id == $issues1->computer_id ? 'selected' : '' }}>
                 {{ $computer->computer_name }}
             </option>
-            @endforeach
+            @endforeach  
         </select>
     </div>
 

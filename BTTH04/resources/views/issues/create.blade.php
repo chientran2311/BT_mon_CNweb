@@ -60,7 +60,7 @@ crossorigin="anonymous">
     <form action="{{ route('issues.store') }}" method="POST" style="margin: 50px 50px">
         @csrf
         <div class="mb-3">
-            <label for="computer_id" class="form-label">Computer id</label>
+            <label for="computer_id" class="form-label">Computer Name</label>
             <select class="form-control" id="computer_id" name="computer_id" required>
                 @foreach($issues2 as $issues)
                     <option value="{{ $issues->computer_id }}">{{ $issues->computer->computer_name }}</option>
