@@ -14,42 +14,41 @@ crossorigin="anonymous">
 <title>Posts</title>
 
 <style>
-    /* Style cho container */
-/* Style cho container */
+
 .button-container {
     display: flex;
-    justify-content: center; /* Căn giữa ngang */
-    align-items: center; /* Căn giữa dọc */
-    margin-top: 20px; /* Khoảng cách trên */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/* Style cho nút Update */
+
 .btn-update {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: #153f99; /* Màu xanh đậm */
+    background-color: #153f99;
     color: #ffffff;
     border: 1px solid #153f99;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect */
+
 .btn-update:hover {
-    background-color: #ffffff; /* Chuyển sang màu trắng khi hover */
-    color: #153f99; /* Chữ đổi sang màu xanh đậm */
+    background-color: #ffffff;
+    color: #153f99;
     border-color: #ffffff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Tăng bóng */
-    transform: translateY(-2px); /* Hiệu ứng nổi */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
-/* Active effect */
+
 .btn-update:active {
-    background-color: #242424; /* Màu tối hơn khi nhấn */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Giảm bóng */
-    transform: translateY(0); /* Giảm hiệu ứng nổi */
+    background-color: #242424;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
 }
 </style>
 </head>

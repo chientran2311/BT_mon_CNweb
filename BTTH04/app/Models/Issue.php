@@ -11,7 +11,7 @@ class Issue extends Model
 
     protected $primaryKey = 'id';
     protected $fillable = ['computer_id', 'reported_by', 'reported_date', 'description', 'urgency', 'status'];
-    public $timestamps = false; // Tắt timestamps
+    public $timestamps = false;
 
     public function computer()
     {

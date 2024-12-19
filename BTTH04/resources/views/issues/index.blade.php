@@ -35,24 +35,24 @@
 }
 
 .btn-edit:hover {
-    background-color:white; /* Màu tím đậm */
+    background-color:white;
     color: #153f99;
     border-color: white;
 }
 
-/* Nút Delete */
+
 .btn-delete {
-    background-color: #ff4d4f; /* Màu đỏ nhạt */
+    background-color: #ff4d4f;
     color: white;
     border: 1px solid #ff4d4f;
 }
 
 .btn-delete:hover {
-    background-color: #f3b5b5; /* Màu đỏ đậm */
+    background-color: #f3b5b5;
     border-color: #ecb4b4;
 }
 
-/* Thêm hiệu ứng khi nhấn */
+
 .btn-edit:active, .btn-delete:active {
     transform: scale(0.95);
 }
