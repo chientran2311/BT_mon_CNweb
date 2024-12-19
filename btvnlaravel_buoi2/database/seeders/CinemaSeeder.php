@@ -34,3 +34,7 @@ class CinemaSeeder extends Seeder
         }
     }
 }
+// trả lời rõ về phần model nhaast là phần về quan hệ giữa các bảng belongto
+
+// nếu validate k thành công thì nó sẽ mắc kẹt trong validate và k chạy khỏi đc function store và update và back về trang trước đ
+// dùng alert thì phải ví dụ sửa dòng nào hiển thị alert dòng đó

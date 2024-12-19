@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 class PostController extends Controller
 {
+    // trả lời rõ về phần model nhaast là phần về quan hệ giữa các bảng belongto
+
+// nếu validate k thành công thì nó sẽ mắc kẹt trong validate và k chạy khỏi đc function store và update và back về trang trước đ
+// dùng alert thì phải ví dụ sửa dòng nào hiển thị alert dòng đó
+// xóa sử dụng xác nhận thì phải học về confirm hoặc modal như cách của thầy là sử dụng bao nhiêu bản ghi thì có bấy nhiêu nút xóa tức có bấy nhiêu modal
+// tức học gì làm gì phải hiểu hết tường tận hàm laravel làm gì thực hiện gì của cái gì
+
+
     /**
      * Display a listing of the resource.
      */
