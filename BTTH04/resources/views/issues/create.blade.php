@@ -57,7 +57,7 @@ crossorigin="anonymous">
 
 
     <h1 style="margin: 50px 50px" class="text-center ">Add New Issues </h1>
-    <form action="{{ route('issues.store') }}" method="POST" style="margin: 50px 50px">
+    <form action="{{ route('issues.store') }}" method="POST" style="margin: 50px 50px" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="computer_id" class="form-label">Computer Name</label>
@@ -97,7 +97,10 @@ crossorigin="anonymous">
                 <option value="Resolved">Resolved</option>
             </select>
         </div>
-
+        <div class="mb-3 upload-image">
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+        </div>
         <button type="submit" class="btn btn-update mt-2">Create <i class="fa-solid fa-plus"></i></button>
     </form>
 

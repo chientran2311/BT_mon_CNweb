@@ -45,10 +45,17 @@ class IssuesController extends Controller
             'description' => 'required',
             'urgency' => 'required',
             'status' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
-        Issue::create($request->all());
-
+        $imagePath = null;
+    if ($request->hasFile('image')) {
+        $image = $request->file('image');
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $imagePath = $image->storeAs('uploads', $imageName, 'public'); // Lưu ảnh vào thư mục public/uploads
+    }
+    $issueData = $request->all();
+    $issueData['image'] = $imagePath; // Lưu đường dẫn ảnh vào dữ liệu
+    Issue::create($issueData);
         return redirect()->route('issues.index')->with('success', 'Issues Inserted!');
     }
 
